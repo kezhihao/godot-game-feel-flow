@@ -1,0 +1,8 @@
+# Normalize EOL for all files that Git considers text files.
+* text=auto eol=lf
+
+# Godot Asset Library: ship only the plugin folder in the downloaded asset zip.
+/*             export-ignore
+/addons        !export-ignore
+/addons/**     !export-ignore
+.gitattributes export-ignore
