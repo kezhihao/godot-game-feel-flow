@@ -1,5 +1,7 @@
 # Game Feel Flow
 
+![Game Feel Flow](../../screenshots/banner.png)
+
 One-stop game feel (juice) system for Godot — 77 composable effects, 24 ready-made combos, a dedicated spring family, shakers, a timeline sequencer, channel/event messaging and a full Inspector workflow.
 
 [![Godot Engine](https://img.shields.io/badge/Godot%20Engine-4.4+-478cbf?logo=godotengine&logoColor=white)](https://godotengine.org/)
@@ -86,6 +88,12 @@ List everything at runtime with `GameFeelFlow.get_effect_names()`.
 3. `examples/effect_library.tscn` — Full effect catalog / lab
 4. `examples/demo_combo_workflow.tscn` — combo authoring workflow
 5. `examples/main_2d.tscn` / `examples/main_3d.tscn` — integration demos
+
+## Screenshots
+
+| Effects Catalog | 3D Playground |
+|---|---|
+| ![Effects catalog](../../screenshots/screenshot_catalog.png) | ![3D playground](../../screenshots/screenshot_3d_playground.png) |
 
 ## Validation
 

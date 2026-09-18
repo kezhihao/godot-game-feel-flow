@@ -1,5 +1,7 @@
 # Game Feel Flow
 
+![Game Feel Flow](screenshots/banner.png)
+
 One-stop game feel (juice) system for **Godot 4.4+** — 77 composable effects, 24 ready-made combos, a dedicated spring family, shakers, a timeline sequencer, channel/event messaging and a full Inspector workflow.
 
 [![Godot Engine](https://img.shields.io/badge/Godot%20Engine-4.4+-478cbf?logo=godotengine&logoColor=white)](https://godotengine.org/)
@@ -33,6 +35,12 @@ $GFFPlayer.preview_effect(my_effect)                         # per-effect previe
 - **Utility nodes** — `GFFPool`, `GFFSoundManager`, `GFFSpringComponent`, `GFFChannelReceiver`
 
 Full feature list, effect catalog and docs: **[addons/game_feel_flow/README.md](addons/game_feel_flow/README.md)**
+
+## Screenshots
+
+| Effects Catalog | 3D Playground |
+|---|---|
+| ![Effects catalog](screenshots/screenshot_catalog.png) | ![3D playground](screenshots/screenshot_3d_playground.png) |
 
 ## Validation
 

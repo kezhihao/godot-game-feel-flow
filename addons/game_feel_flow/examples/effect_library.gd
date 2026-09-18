@@ -122,6 +122,11 @@ func _load_scene_entry(entry: Dictionary) -> void:
 		return
 
 	var packed: PackedScene = _packed_scenes[scene_id]
+	if packed == null:
+		scene_label.text = "Scene: failed to load (%s)" % scene_id
+		current_scene_id = ""
+		current_scene = null
+		return
 	var instance: Node = packed.instantiate()
 	current_scene_id = scene_id
 	current_scene = instance

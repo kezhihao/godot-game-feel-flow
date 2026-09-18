@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://dsu45asqq7j6l" path="res://addons/game_feel_flow/examples/main_3d.gd" id="1"]
 [ext_resource type="Script" uid="uid://c731ls1wu0npd" path="res://addons/game_feel_flow/editor/gff_param_panel.gd" id="2"]
-[ext_resource type="Script" uid="uid://gqijirp27b11" path="res://addons/game_feel_flow_pro/effects/screen/gff_compositor_effect_base.gd" id="2_upnw2"]
 [ext_resource type="PackedScene" uid="uid://l7sjjrf1ajc6" path="res://addons/game_feel_flow/examples/assets/models/kenney_character.glb" id="14_char"]
 [ext_resource type="PackedScene" uid="uid://b65n52nv6j0bd" path="res://addons/game_feel_flow/examples/assets/models/kenney_coin.glb" id="15_coin"]
 
@@ -18,179 +17,6 @@ background_energy_multiplier = 1.25
 sky = SubResource("Sky_7i3b7")
 ambient_light_source = 2
 ambient_light_color = Color(0.5, 0.5, 0.5, 1)
-
-[sub_resource type="CompositorEffect" id="CompositorEffect_4utdx"]
-resource_local_to_scene = false
-resource_name = ""
-enabled = true
-effect_callback_type = 4
-needs_motion_vectors = false
-needs_normal_roughness = false
-script = ExtResource("2_upnw2")
-compute_code = "
-vec2 dir = vec2(1.000000, 0.000000);
-ivec2 offset = ivec2(round(dir * params.effect.x * params.raster_size));
-float r = imageLoad(color_image, clamp(uv + offset, ivec2(0), size - 1)).r;
-float g = color.g;
-float b = imageLoad(color_image, clamp(uv - offset, ivec2(0), size - 1)).b;
-color = vec4(r, g, b, color.a);
-"
-
-[sub_resource type="CompositorEffect" id="CompositorEffect_2pquj"]
-resource_local_to_scene = false
-resource_name = ""
-enabled = true
-effect_callback_type = 4
-needs_motion_vectors = false
-needs_normal_roughness = false
-script = ExtResource("2_upnw2")
-compute_code = "
-vec2 dir = vec2(1.000000, 0.000000);
-ivec2 offset = ivec2(round(dir * params.effect.x * params.raster_size));
-float r = imageLoad(color_image, clamp(uv + offset, ivec2(0), size - 1)).r;
-float g = color.g;
-float b = imageLoad(color_image, clamp(uv - offset, ivec2(0), size - 1)).b;
-color = vec4(r, g, b, color.a);
-"
-
-[sub_resource type="CompositorEffect" id="CompositorEffect_txyab"]
-resource_local_to_scene = false
-resource_name = ""
-enabled = true
-effect_callback_type = 4
-needs_motion_vectors = false
-needs_normal_roughness = false
-script = ExtResource("2_upnw2")
-compute_code = "
-vec2 dir = vec2(1.000000, 0.000000);
-ivec2 offset = ivec2(round(dir * params.effect.x * params.raster_size));
-float r = imageLoad(color_image, clamp(uv + offset, ivec2(0), size - 1)).r;
-float g = color.g;
-float b = imageLoad(color_image, clamp(uv - offset, ivec2(0), size - 1)).b;
-color = vec4(r, g, b, color.a);
-"
-
-[sub_resource type="CompositorEffect" id="CompositorEffect_fktqx"]
-resource_local_to_scene = false
-resource_name = ""
-enabled = true
-effect_callback_type = 4
-needs_motion_vectors = false
-needs_normal_roughness = false
-script = ExtResource("2_upnw2")
-compute_code = "
-vec2 dir = vec2(1.000000, 0.000000);
-ivec2 offset = ivec2(round(dir * params.effect.x * params.raster_size));
-float r = imageLoad(color_image, clamp(uv + offset, ivec2(0), size - 1)).r;
-float g = color.g;
-float b = imageLoad(color_image, clamp(uv - offset, ivec2(0), size - 1)).b;
-color = vec4(r, g, b, color.a);
-"
-
-[sub_resource type="CompositorEffect" id="CompositorEffect_upnw2"]
-resource_local_to_scene = false
-resource_name = ""
-enabled = true
-effect_callback_type = 4
-needs_motion_vectors = false
-needs_normal_roughness = false
-script = ExtResource("2_upnw2")
-compute_code = "
-vec2 dir = vec2(1.000000, 0.000000);
-ivec2 offset = ivec2(round(dir * params.effect.x * params.raster_size));
-float r = imageLoad(color_image, clamp(uv + offset, ivec2(0), size - 1)).r;
-float g = color.g;
-float b = imageLoad(color_image, clamp(uv - offset, ivec2(0), size - 1)).b;
-color = vec4(r, g, b, color.a);
-"
-
-[sub_resource type="CompositorEffect" id="CompositorEffect_aqr5g"]
-resource_local_to_scene = false
-resource_name = ""
-enabled = true
-effect_callback_type = 4
-needs_motion_vectors = false
-needs_normal_roughness = false
-script = ExtResource("2_upnw2")
-compute_code = "
-vec2 dir = vec2(1.000000, 0.000000);
-ivec2 offset = ivec2(round(dir * params.effect.x * params.raster_size));
-float r = imageLoad(color_image, clamp(uv + offset, ivec2(0), size - 1)).r;
-float g = color.g;
-float b = imageLoad(color_image, clamp(uv - offset, ivec2(0), size - 1)).b;
-color = vec4(r, g, b, color.a);
-"
-
-[sub_resource type="CompositorEffect" id="CompositorEffect_x6pni"]
-resource_local_to_scene = false
-resource_name = ""
-enabled = true
-effect_callback_type = 4
-needs_motion_vectors = false
-needs_normal_roughness = false
-script = ExtResource("2_upnw2")
-compute_code = "
-vec2 dir = vec2(1.000000, 0.000000);
-ivec2 offset = ivec2(round(dir * params.effect.x * params.raster_size));
-float r = imageLoad(color_image, clamp(uv + offset, ivec2(0), size - 1)).r;
-float g = color.g;
-float b = imageLoad(color_image, clamp(uv - offset, ivec2(0), size - 1)).b;
-color = vec4(r, g, b, color.a);
-"
-
-[sub_resource type="CompositorEffect" id="CompositorEffect_5i5vr"]
-resource_local_to_scene = false
-resource_name = ""
-enabled = true
-effect_callback_type = 4
-needs_motion_vectors = false
-needs_normal_roughness = false
-script = ExtResource("2_upnw2")
-compute_code = "
-vec2 dir = vec2(1.000000, 0.000000);
-ivec2 offset = ivec2(round(dir * params.effect.x * params.raster_size));
-float r = imageLoad(color_image, clamp(uv + offset, ivec2(0), size - 1)).r;
-float g = color.g;
-float b = imageLoad(color_image, clamp(uv - offset, ivec2(0), size - 1)).b;
-color = vec4(r, g, b, color.a);
-"
-
-[sub_resource type="CompositorEffect" id="CompositorEffect_h5fwd"]
-resource_local_to_scene = false
-resource_name = ""
-enabled = true
-effect_callback_type = 4
-needs_motion_vectors = false
-needs_normal_roughness = false
-script = ExtResource("2_upnw2")
-compute_code = "
-vec2 dir = vec2(1.000000, 0.000000);
-ivec2 offset = ivec2(round(dir * params.effect.x * params.raster_size));
-float r = imageLoad(color_image, clamp(uv + offset, ivec2(0), size - 1)).r;
-float g = color.g;
-float b = imageLoad(color_image, clamp(uv - offset, ivec2(0), size - 1)).b;
-color = vec4(r, g, b, color.a);
-"
-
-[sub_resource type="CompositorEffect" id="CompositorEffect_1h4mv"]
-resource_local_to_scene = false
-resource_name = ""
-enabled = true
-effect_callback_type = 4
-needs_motion_vectors = false
-needs_normal_roughness = false
-script = ExtResource("2_upnw2")
-compute_code = "
-vec2 dir = vec2(1.000000, 0.000000);
-ivec2 offset = ivec2(round(dir * params.effect.x * params.raster_size));
-float r = imageLoad(color_image, clamp(uv + offset, ivec2(0), size - 1)).r;
-float g = color.g;
-float b = imageLoad(color_image, clamp(uv - offset, ivec2(0), size - 1)).b;
-color = vec4(r, g, b, color.a);
-"
-
-[sub_resource type="Compositor" id="Compositor_aqr5g"]
-compositor_effects = Array[CompositorEffect]([SubResource("CompositorEffect_4utdx"), SubResource("CompositorEffect_2pquj"), SubResource("CompositorEffect_txyab"), SubResource("CompositorEffect_fktqx"), SubResource("CompositorEffect_upnw2"), SubResource("CompositorEffect_aqr5g"), SubResource("CompositorEffect_x6pni"), SubResource("CompositorEffect_5i5vr"), SubResource("CompositorEffect_h5fwd"), SubResource("CompositorEffect_1h4mv")])
 
 [sub_resource type="StandardMaterial3D" id="Material_Red"]
 albedo_color = Color(1, 0.2, 0.2, 1)
@@ -220,7 +46,6 @@ script = ExtResource("1")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=785335325]
 environment = SubResource("Environment_1")
-compositor = SubResource("Compositor_aqr5g")
 
 [node name="Objects" type="Node3D" parent="." unique_id=1236425624]
 
